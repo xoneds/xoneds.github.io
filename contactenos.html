@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contáctenos - First Cargo Logistic</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>First Cargo Logistic</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="quienes-somos.html">Quienes Somos</a></li>
+            <li><a href="objetivos.html">Objetivos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="otros-servicios.html">Otros Servicios</a></li>
+            <li><a href="contactenos.html">Contáctenos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Contáctenos</h2>
+            <div class="contact-form">
+                <form action="guardar_contacto.php" method="post">
+                    <!-- Campo para nombre -->
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <!-- Campo para empresa -->
+                    <div class="form-group">
+                        <label for="empresa">Empresa:</label>
+                        <input type="text" id="empresa" name="empresa">
+                    </div>
+
+                    <!-- Campo para correo electrónico -->
+                    <div class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <!-- Campo para teléfono -->
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+
+                    <!-- Campo para mensaje -->
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                    </div>
+
+                    <!-- Botón de envío -->
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 First Cargo Logistic</p>
+    </footer>
+</body>
+</html>
